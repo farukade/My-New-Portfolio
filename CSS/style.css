@@ -18,7 +18,7 @@ p{
 }
 /* UTILITT CLASSES */
 .container{
-    max-width: 960px;
+    max-width: 1200px;
     padding: 0 20px;
     overflow: auto;
     margin: auto;
@@ -99,28 +99,40 @@ footer p{
     text-align: center;
 }
 /* ABOUT SECTION */
+#expertise img{
+    width: 40%;
+    margin: 50px;
+    border: rgba(0, 0, 0, 0.507) solid 5px;
+}
 #expertise{
     color: rgb(255, 255, 255);
-    font-size: 5rem;
+    font-size: 0.9rem;
     text-align: right;
-    width: 48%;
+    width: 60%;
     padding: 30px;
     float: left;
+    text-align: justify;
+    line-height: 1rem;
 }
 #skills{
-    width: 50%;
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 35%;
+    margin: 100px 0px;
     color: rgb(255, 255, 255);
     float: right;
     text-align: center;
     padding: 30px;
-    font-size: 10rem;
+    font-size: 2rem;
 }
-#skills i{
+#skills p{
+    line-height: 2rem;
+    font-size: 1.2rem;
     width: 100%;
 }
-#expertise i{
-    margin: 30px;
+#expertise p{
+    margin: 40px auto;
 }
+
 /* WORK SECTIONS */
 #projects{
     width: 100%;
