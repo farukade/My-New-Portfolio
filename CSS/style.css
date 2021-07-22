@@ -1,0 +1,132 @@
+/* RESET */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* MAIN STYLING */
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    line-height: 1.7em;
+    background-color: rgb(0, 87, 138);
+}
+h1 h2 h3{
+    margin-bottom: 20px;
+}
+p{
+    margin: 10px 0px;
+}
+/* UTILITT CLASSES */
+.container{
+    max-width: 960px;
+    padding: 0 20px;
+    overflow: auto;
+    margin: auto;
+}
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.507);
+    text-decoration: none;
+    padding: 10px;
+}
+/* NAVBAR */
+#navbar{
+    background: rgba(0, 0, 0, 0.363);
+    color: #fff;
+    overflow: auto;
+}
+#navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul{
+    float: right;
+    list-style: none;
+
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+#navbar ul li .current,
+#navbar ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.507);
+    color: rgb(255, 255, 255);
+}
+/* HERO SECTION */
+#intro{
+    color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: 200px auto;
+    text-align: center;
+}
+.name{
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 10px;
+    font-size: 2.5rem;
+}
+#intro p{
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 20px;
+}
+footer #social-icons{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+footer #social-icons a{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 0 20px;
+}
+footer p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* ABOUT SECTION */
+#expertise{
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    text-align: right;
+    width: 48%;
+    padding: 30px;
+    float: left;
+}
+#skills{
+    width: 50%;
+    color: rgb(255, 255, 255);
+    float: right;
+    text-align: center;
+    padding: 30px;
+    font-size: 10rem;
+}
+#skills i{
+    width: 100%;
+}
+#expertise i{
+    margin: 30px;
+}
+/* WORK SECTIONS */
+#projects{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    float: right;
+    text-align: center;
+    padding: 30px;
+    font-size: 10rem;
+}
