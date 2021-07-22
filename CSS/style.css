@@ -18,22 +18,25 @@ p{
 }
 /* UTILITT CLASSES */
 .container{
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 0 20px;
     overflow: auto;
     margin: auto;
 }
 .btn{
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     padding: 10px;
 }
 /* NAVBAR */
 #navbar{
-    background: rgba(0, 0, 0, 0.363);
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     overflow: auto;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 #navbar a{
     color: rgb(255, 255, 255);
@@ -59,9 +62,10 @@ p{
 }
 #navbar ul li .current,
 #navbar ul li a:hover{
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
+
 /* HERO SECTION */
 #intro{
     color: rgb(255, 255, 255);
@@ -70,7 +74,7 @@ p{
     text-align: center;
 }
 .name{
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     font-size: 2.5rem;
 }
@@ -81,8 +85,10 @@ p{
 
 /* FOOTER */
 footer{
-    background-color: rgba(0, 0, 0, 0.363);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
+    bottom: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 footer #social-icons{
     max-width: 800px;
@@ -101,23 +107,23 @@ footer p{
 /* ABOUT SECTION */
 #expertise img{
     width: 40%;
-    margin: 50px;
-    border: rgba(0, 0, 0, 0.507) solid 5px;
+    margin: 20px;
+    border: rgba(0, 0, 0, 0.9) solid 5px;
 }
 #expertise{
     color: rgb(255, 255, 255);
-    font-size: 0.9rem;
     text-align: right;
     width: 60%;
     padding: 30px;
+    margin: 100px 20px 100px 20px;
     float: left;
     text-align: justify;
     line-height: 1rem;
 }
 #skills{
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 35%;
-    margin: 100px 0px;
+    margin: 150px 0px 50px 0px;
     color: rgb(255, 255, 255);
     float: right;
     text-align: center;
@@ -131,6 +137,7 @@ footer p{
 }
 #expertise p{
     margin: 40px auto;
+    font-size: 1.0rem;
 }
 
 /* WORK SECTIONS */
@@ -141,4 +148,57 @@ footer p{
     text-align: center;
     padding: 30px;
     font-size: 10rem;
+    margin: 200px auto;
 }
+
+/* SMALL NAVBAR AND FOOTER*/
+@media(max-width:700px){
+    #navbar h1{
+        padding-top: 10px;
+    }
+    #navbar ul li a{
+        font-size: 0.8rem;
+        padding: 20px 10px;
+    }
+    footer #social-icons a{
+        font-size: 1rem;
+        padding: 5px;
+        width: 100%;
+    }
+    footer{
+        bottom: 0;
+    }
+    footer p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    footer #social-icons{
+        margin: auto;
+        display: flex;
+        width: 100%;
+    }
+    #intro{
+        max-width: 800px;
+        margin: 200px auto;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        line-height: 5rem;
+    }
+    .name{
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 2.5rem;
+    }
+    #intro p{
+        font-size: 1.5rem;
+        padding: 20px 0;
+    }
+    .btn{
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+    }
+}
+
