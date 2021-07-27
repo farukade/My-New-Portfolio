@@ -13,6 +13,9 @@
 }
 /* MAIN STYLING */
 html,body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif; 
     line-height: 1vh;
     min-height: 90vh;
@@ -61,15 +64,18 @@ p{
 #navbar ul li a:hover{
     background-color: var(--hover-bg-color);
 }
+.hamburger-wrapper{
+    
+}
 /* FOOTER */
 footer, #footer{
     background-color: var(--dark-color);
     padding: 0.5vw;
+    margin-top: auto;
     width: 100%;
     max-height: 30vh;
     position: absolute;
     top: 100%;
-    margin-top: auto;
 }
 footer #social-icons{
     max-width: 800px;
@@ -289,7 +295,7 @@ h3{
 }
 
 /* SMALL SCREEN */
-@media(max-width:900px){
+@media(max-width:550px){
     #navbar h1{
         padding-top: 3vh;
         font-size: 2.5vw;
@@ -340,12 +346,19 @@ h2{
 
 /* SMALLER SCREEN */
 @media(max-width:380px){
+    nav{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
     #navbar h1{
-        padding-top: 5vh;
-        font-size: 3vw;
+        padding-top: 2vh;
+        font-size: 3vh;
     }
     #navbar ul{
-        font-size: 2.5vw;
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: 3vh;
     
     }
     #navbar ul li a{
@@ -355,13 +368,60 @@ h2{
         width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100vw;
     }
     .btn-home a{
         display: block;
-        width: 100vw;
+        width: 50vw;
     }
 
+/* ABOUT SECTION */
+#about-main{
+    margin: 2vh; 
+}
+#about img{
+    width: 30%;
+    margin: 1vw;
+    border-right: rgba(0, 0, 0, 0.9) solid 5px;
+    border-bottom: rgba(0, 0, 0, 0.9) solid 5px;
+}
+#about{
+    color: var(--font-color);
+    text-align: right;
+    width: 80%;
+    padding: 2vw;
+    margin: 10vh 1vw;
+    text-align: justify;
+    line-height: 3vh;
+}
+#skills{
+    background-color: var(--darker-color);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10vh auto;
+    height: 100%;
+    color: var(--font-color);
+    text-align: center;
+    padding: 1vh;
+    font-size: 4vh;
+}
+#skills p{
+    line-height: 1vw;
+    font-size: 1.2vw;
+    width: 100%;
+    margin: 2vh auto;
+}
+#about p{
+    margin: 5vh auto;
+    font-size: 1.2vw;
+}
+progress{
+    width: 90%;
+}
 
 
 
