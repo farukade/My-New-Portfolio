@@ -13,9 +13,9 @@
 }
 /* MAIN STYLING */
 html,body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
     line-height: 1vh;
-    min-height: 100vh;
+    min-height: 90vh;
     position: relative;
     background-color: var(--light-color);
 }
@@ -95,6 +95,9 @@ footer p{
     text-decoration: none;
     padding: 1vw;
 }
+div > .btn {
+    margin: 0 0.5vw;
+}
 .btn:hover{
     background-color: var(--hover-bg-color);
 }
@@ -110,26 +113,23 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .name{
     background-color: var(--darker-color);
     padding: 1vw;
     font-size: 2vw;
-    animation: my-name 1s infinite ease;
-    border: solid 10px green;
+    animation: my-name 10s infinite ease;
+    
 }
 @keyframes my-name{
     25%{
-        border: solid 10px red;
-    }
-    50%{
-        border: solid 10px blue;
+        box-shadow: inset 200px 0 red;
+        box-shadow: inset 0 200px red;
+        color: var(--hover-bg-color);
     }
     75%{
-        border: solid 10px white;
-    }
-    100%{
-        border: solid 10px purple;
+        /* box-shadow: inset -200px 0 red; */
     }
 }
 h2{
@@ -220,9 +220,19 @@ progress{
 /* CONTACT PAGE */
 #contact-main{
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
     align-items: center;
     margin: 20vh;
+}
+#contact-info{
+    height: 60vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darker-color);
+    padding: 3vh;
 }
 form{
     display: flex;
@@ -249,6 +259,78 @@ textarea{
     min-height: 100px;
     max-height: 100px;
     margin-top: 1vh;
+}
+h3{
+    text-align: center;
+    color: var(--font-color);
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social-contacts{
+    display: flex;
+    flex-direction: column;
+    margin: 2vh;
+}
+.social-contacts > .icon a {
+    color: var(--font-color);
+    font-size: 5vh;
+    margin: 0 auto;
+    text-align: left;
+}
+.social-contacts .icon{
+    margin: 2vh;
+    text-align: left;
+}
+.social-contacts p{
+    color: var(--font-color);
+    /* background-color: red; */
+    margin: 2vh;
+    line-height: 1;
+}
+
+/* SMALL SCREEN */
+@media(max-width:900px){
+    #navbar h1{
+        padding-top: 3vh;
+        font-size: 2.5vw;
+    }
+    #navbar ul{
+        font-size: 2vw;
+    
+    }
+    #navbar ul li a{
+        padding: 3vw;
+    }
+    /* SMALL FOOTER */
+    footer, #footer{
+        padding: 1vw;
+    }
+    footer #social-icons{
+        padding: 2vw;
+    }
+    footer #social-icons a{
+        font-size: 4vw;
+        margin: 4vw;
+    }
+    footer p{
+        margin: 2vw;
+        font-size: 2.5vw;
+    }
+    /* SMALL HOME AND HERO SECTION */
+#home-main{
+    height: 100vh;
+}
+.name{
+    padding: 1vw;
+    font-size: 4vw;
+}
+h2{
+    font-size: 3.5vw;
+}
+#intro p{
+    font-size: 3vw;
+    padding: 3vh 0;
+}
 
 }
 
@@ -256,58 +338,36 @@ textarea{
 
 
 
-
-
-
-
-/* SMALL NAVBAR AND FOOTER
-@media(max-width:700px){
+/* SMALLER SCREEN */
+@media(max-width:380px){
     #navbar h1{
-        padding-top: 4vh;
+        padding-top: 5vh;
+        font-size: 3vw;
+    }
+    #navbar ul{
+        font-size: 2.5vw;
+    
     }
     #navbar ul li a{
-        font-size: 2.4vh;
-        padding: 3vh 2vh;
+        padding: 4vw 1vw;
     }
-    footer #social-icons a{
-        font-size: 3.5vh;
-        padding: 1vh;
+    .btn-home {
         width: 100%;
-    }
-    footer{
-        top: 0;
+        display: flex;
+        flex-direction: column;
         width: 100vw;
     }
-    footer p{
-        color: rgb(255, 255, 255);
-        text-align: center;
-        width: 100%;
+    .btn-home a{
+        display: block;
+        width: 100vw;
     }
-    footer #social-icons{
-        margin: auto;
-        display: flex;
-        width: 100%;
-    }
-    /* INTRO ON SMALL SCREEN */
-    #intro{
-        width: 100%;
-        margin: 20vh auto;
-        text-align: center;
-        line-height: 3vh;
-    }
-    .name{
-        background-color: rgba(0, 0, 0, 0.8);
-        padding: 1vh;
-        font-size: 3.5vh;
-    }
-    #intro p{
-        font-size: 3vh;
-        padding: 1vh 0;
-    }
-    .btn{
-        width: 50%;
-        margin: auto;
-        padding: 2vh;
-    }
-} */
+
+
+
+
+}
+
+
+
+
 
