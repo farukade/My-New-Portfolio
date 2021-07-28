@@ -8,20 +8,29 @@
     <meta name="description" content="Welcome to Suleiman Faruk's Portfolio Website">
     <meta name="keywords" content="Portfolio,suleiman's Portfolio,Faruk's Portfolio,developer's Portfolio">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/Image.css">
+    <link rel="stylesheet" href="/CSS/media.css">
+    
+<!-- FONT AWESOME ICON LINK -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 </head>
 <body>
    <header>
-       <nav id="navbar">
-            <h1 class="logo"><a href="/Index.html">Suleiman FARUK</a></h1>
-            <ul>
-                <li><a href="/Index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/work.html">Work</a></li>
-                <li><a class="current" href="/contact.html">Contact</a></li>
-            </ul>
-       </nav>
+    <nav id="navbar">
+        <h1 class="logo"><a href="/Index.html">Suleiman FARUK</a></h1>
+        <ul class="nav-items" id="nav-item-wrapper">
+            <li><a href="/Index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/work.html">Projects</a></li>
+            <li><a href="/images.html">Gallery</a></li>
+            <li><a class="current" href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger-wrapper" id="menu-toggler" onclick="toggleNavbar()">
+            <img class="menubar-image" src="/Files/Menu bar white.png" alt="Menu">
+        </div>
+   </nav>
    </header>
    <main id="contact-main">
     <form action="">
@@ -33,7 +42,7 @@
         <input type="text" name="name" id="name" placeholder="Enter Subject">
         <br>
         <textarea name="comment" id="comment" >Message Here</textarea>
-        <input type="submit" value="Submit">
+        <input class="submit" type="submit" value="Submit">
 
         
     </form>
@@ -42,11 +51,15 @@
         <div class="social-contacts">
             <div class="icon 3">
             <a href="https://wa.me/+2348133667606/"><i class="fab fa-whatsapp"></i></a>
-            <p>Whatsapp: +2348133667606</p>
+            <p>+234 813 366 7606</p>
+            </div>
+            <div class="icon 4">
+            <a href="https://www.linkedin.com/in/faruk-suleiman-391b5a11a/"><i class="fab fa-linkedin"></i></a>
+            <p>Suleiman Faruk</p>
             </div>
             <div class="icon 5">
             <a href="mailto:farukadekunle@gmail.com"><i class="fas fa-envelope"></i></a>
-            <p>Email: farukadekunle@gmail.com</p>
+            <p>farukadekunle @gmail.com</p>
             </div>
         </div>
     </div>
@@ -56,7 +69,7 @@
     <footer id="footer">
         <div id="social-icons">
             <a href="https://github.com/Omar-Faruk-tech"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/faruk-suleiman-391b5a11a/"><i class="fab fa-linkedin"></i></i></a>
+            <a href="https://www.linkedin.com/in/faruk-suleiman-391b5a11a/"><i class="fab fa-linkedin"></i></a>
             <a href=""><i class="fab fa-whatsapp"></i></a>
             <a href="https://twitter.com/adekunle_faruk"><i class="fab fa-twitter"></i></a>
             <a href="mailto:farukadekunle@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -66,6 +79,6 @@
             <p>Suleiman Faruk ©2021</p>
         </div>
     </footer>
-
+    <script src="/JS/menubar.js"></script>
 </body>
 </html>

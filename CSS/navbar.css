@@ -1,0 +1,70 @@
+/* NAVBAR AND FOOTER */
+#navbar{
+    background: var(--dark-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+#navbar a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+#navbar h1{
+    height: 100%;
+    align-self: center;
+    font-size: 2vw;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+}
+.menubar-image{
+    display: none;
+}
+#navbar ul li a{
+    padding: 2vw;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+#navbar ul li .current,
+#navbar ul li a:hover{
+    background-color: var(--hover-bg-color);
+}
+}
+.hamburger-wrapper{
+    display: none;
+}
+/* FOOTER */
+footer, #footer{
+    background-color: var(--dark-color);
+    padding: 0.5vw;
+    margin-top: auto;
+    width: 100%;
+    max-height: 30vh;
+    position: absolute;
+    top: 100%;
+}
+footer #social-icons{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+}
+footer #social-icons a{
+    color: var(--font-color);
+    font-size: 2vw;
+    margin: 2vw;
+}
+footer p{
+    color: var(--font-color);
+    text-align: center;
+    margin: 1vw;
+    font-size: 1.2vw;
+}

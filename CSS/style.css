@@ -28,72 +28,6 @@ main{
 p{
     margin: 10vh 0vw;
 }
-/* NAVBAR AND FOOTER */
-#navbar{
-    background: var(--dark-color);
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    overflow: auto;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-}
-#navbar a{
-    color: var(--font-color);
-    text-decoration: none;
-}
-#navbar h1{
-    padding-top: 5vh;
-    font-size: 2vw;
-}
-#navbar ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.2vw;
-
-}
-#navbar ul li a{
-    padding: 2vw;
-    display: block;
-    text-align: center;
-    font-weight: 500;
-}
-#navbar ul li .current,
-#navbar ul li a:hover{
-    background-color: var(--hover-bg-color);
-}
-.hamburger-wrapper{
-    
-}
-/* FOOTER */
-footer, #footer{
-    background-color: var(--dark-color);
-    padding: 0.5vw;
-    margin-top: auto;
-    width: 100%;
-    max-height: 30vh;
-    position: absolute;
-    top: 100%;
-}
-footer #social-icons{
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-    padding: 1vw;
-}
-footer #social-icons a{
-    color: var(--font-color);
-    font-size: 2vw;
-    margin: 2vw;
-}
-footer p{
-    color: var(--font-color);
-    text-align: center;
-    margin: 1vw;
-    font-size: 1.2vw;
-}
 /* UTILITT CLASSES */
 .btn{
     color: var(--font-color);
@@ -232,7 +166,7 @@ progress{
     margin: 20vh;
 }
 #contact-info{
-    height: 60vh;
+    height: auto;
     width: 35vw;
     display: flex;
     flex-direction: column;
@@ -283,6 +217,11 @@ h3{
     margin: 0 auto;
     text-align: left;
 }
+.submit:hover{
+    background-color: var(--darker-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
 .social-contacts .icon{
     margin: 2vh;
     text-align: left;
@@ -294,138 +233,7 @@ h3{
     line-height: 1;
 }
 
-/* SMALL SCREEN */
-@media(max-width:550px){
-    #navbar h1{
-        padding-top: 3vh;
-        font-size: 2.5vw;
-    }
-    #navbar ul{
-        font-size: 2vw;
-    
-    }
-    #navbar ul li a{
-        padding: 3vw;
-    }
-    /* SMALL FOOTER */
-    footer, #footer{
-        padding: 1vw;
-    }
-    footer #social-icons{
-        padding: 2vw;
-    }
-    footer #social-icons a{
-        font-size: 4vw;
-        margin: 4vw;
-    }
-    footer p{
-        margin: 2vw;
-        font-size: 2.5vw;
-    }
-    /* SMALL HOME AND HERO SECTION */
-#home-main{
-    height: 100vh;
-}
-.name{
-    padding: 1vw;
-    font-size: 4vw;
-}
-h2{
-    font-size: 3.5vw;
-}
-#intro p{
-    font-size: 3vw;
-    padding: 3vh 0;
-}
 
-}
-
-
-
-
-
-/* SMALLER SCREEN */
-@media(max-width:380px){
-    nav{
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-    #navbar h1{
-        padding-top: 2vh;
-        font-size: 3vh;
-    }
-    #navbar ul{
-        flex-direction: column;
-        margin-top: 10px;
-        font-size: 3vh;
-    
-    }
-    #navbar ul li a{
-        padding: 4vw 1vw;
-    }
-    .btn-home {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-    }
-    .btn-home a{
-        display: block;
-        width: 50vw;
-    }
-
-/* ABOUT SECTION */
-#about-main{
-    margin: 2vh; 
-}
-#about img{
-    width: 30%;
-    margin: 1vw;
-    border-right: rgba(0, 0, 0, 0.9) solid 5px;
-    border-bottom: rgba(0, 0, 0, 0.9) solid 5px;
-}
-#about{
-    color: var(--font-color);
-    text-align: right;
-    width: 80%;
-    padding: 2vw;
-    margin: 10vh 1vw;
-    text-align: justify;
-    line-height: 3vh;
-}
-#skills{
-    background-color: var(--darker-color);
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10vh auto;
-    height: 100%;
-    color: var(--font-color);
-    text-align: center;
-    padding: 1vh;
-    font-size: 4vh;
-}
-#skills p{
-    line-height: 1vw;
-    font-size: 1.2vw;
-    width: 100%;
-    margin: 2vh auto;
-}
-#about p{
-    margin: 5vh auto;
-    font-size: 1.2vw;
-}
-progress{
-    width: 90%;
-}
-
-
-
-}
 
 
 
