@@ -10,101 +10,36 @@
     --hover-bg-color: rgb(0, 0, 0);
     --darker-color: rgba(0, 0, 0, 0.8);
 }
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-color);
-    color: var(--font-color);
-    font-family: Arial, Helvetica, sans-serif;
-}
-.pic-container{
+#gallery-main {
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 15vh auto 5vh auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    /* grid-auto-rows: minmax(150px, auto); */
-    grid-gap: 20px;
-    /* height: 100vh; */
-    margin: 30vh;
-}
-.grid-img{
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 0.5rem;
+  }
+  
+  .img {
+    object-fit: cover;
     width: 100%;
-    min-height: 40vh;
-    border-radius: 5%;
-}
-
-@media(max-width:900px){
-    .pic-container{
-        grid-template-columns: repeat(3, 1fr);
-        margin: 40vh 5vh;
-    }
-}
-@media(max-width:500px){
-    .pic-container{
-        grid-template-columns: repeat(1, 1fr);
-        margin: 40vh 5vh;
-    }
-}
-
-
-
-/*
-.pic1{
-    grid-column: ;
-    grid-row: ;
-
-}
-.pic2{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic3{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic4{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic5{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic6{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic7{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic8{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic9{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic10{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic11{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-}
-.pic12{
-    grid-column: ;
-    grid-row: ;
-    background-color: red;
-} */
+    height: 100%;
+    border: 10px solid var(--darker-color);
+  }
+  
+  .item-a {
+    grid-row: 1 / 3;
+  }
+  
+  .item-b {
+    grid-column: 3 / 5;
+  }
+  
+  .item-c {
+    grid-row: 2 / 4;
+  }
+  
+  .item-d {
+    grid-column: 3 / 5;
+  }
+  

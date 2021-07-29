@@ -59,17 +59,23 @@ div > .btn {
     background-color: var(--darker-color);
     padding: 1vw;
     font-size: 2vw;
-    animation: my-name 10s infinite ease;
+    animation: my-name 0.5s infinite ease;
     
 }
 @keyframes my-name{
-    25%{
+    0%{
+        /* background-size: 0%; */
+    }
+    5%{
         box-shadow: inset 200px 0 red;
         box-shadow: inset 0 200px red;
         color: var(--hover-bg-color);
     }
-    75%{
-        /* box-shadow: inset -200px 0 red; */
+    45%{
+        color: var(--font-color);
+    }
+    50%{
+        box-shadow: inset 20px 0 var(--darker-color);
     }
 }
 h2{
