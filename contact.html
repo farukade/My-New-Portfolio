@@ -33,16 +33,16 @@
    </nav>
    </header>
    <main id="contact-main">
-    <form action="">
-        
+    <form id="form" onsubmit="return false" action="">
+        <div id="message"></div>
         <input type="text" name="name" id="name" placeholder="Enter Fullname">
         <br>
         <input type="text" name="email" id="email" placeholder="Enter Email">
         <br>
-        <input type="text" name="name" id="name" placeholder="Enter Subject">
+        <input type="text" name="subject" id="subject" placeholder="Enter Subject">
         <br>
-        <textarea name="comment" id="comment" >Message Here</textarea>
-        <input class="submit" type="submit" value="Submit">
+        <textarea name="comment" id="comment" placeholder="Message Here" ></textarea>
+        <button onclick="saveResponse()" class="submit" type="submit" value="Submit">Submit</button>
 
         
     </form>
@@ -80,5 +80,6 @@
         </div>
     </footer>
     <script src="/JS/menubar.js"></script>
+    <script src="/JS/authentication.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 /* NAVBAR AND FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 #navbar{
     background: var(--dark-color);
     color: #fff;
@@ -16,27 +17,29 @@
 #navbar h1{
     height: 100%;
     align-self: center;
-    font-size: 2vw;
+    font-size: 30px;
 }
 #navbar ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .menubar-image{
     display: none;
 }
 #navbar ul li a{
-    padding: 2vw;
+    padding: 15px 10px;
+    margin: 15px 5px;
     display: block;
     text-align: center;
     font-weight: 500;
+    border: gold 1px solid;
 }
 #navbar ul li .current,
 #navbar ul li a:hover{
-    background-color: var(--hover-bg-color);
-}
+    background-color: gold;
+    color: black;
 }
 .hamburger-wrapper{
     display: none;
@@ -61,6 +64,9 @@ footer #social-icons a{
     color: var(--font-color);
     font-size: 2vw;
     margin: 2vw;
+}
+footer #social-icons a:hover{
+    color: gold;
 }
 footer p{
     color: var(--font-color);

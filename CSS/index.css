@@ -1,0 +1,13 @@
+body{
+    background-color: black; 
+    background-image: url(/IMG/Suleiman\ Faruk.jpg);
+    background-repeat: no-repeat; 
+    background-position: right; 
+    background-size: 35%;
+    font-family: 'Acme', sans-serif; 
+}
+@media(max-width: 600px){
+    body{
+        background-image: none;
+    }
+}
