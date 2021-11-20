@@ -201,7 +201,9 @@ progress{
     height: auto;
     width: 80vw;
     margin: 0;
-    padding: 5vh;
+    padding: 1px;
+    font-size: 18px;
+    font-weight: lighter;
 }
 form{
     margin: 2vh;
