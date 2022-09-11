@@ -219,10 +219,12 @@ form{
 }
 input{
     font-size: 3vh;
+    background-color: white;
 }
 textarea{
   font-size: 3vh;
   width: 100%;
+  background-color: white;
 }
 h3{
     width: 100%;
@@ -439,10 +441,12 @@ form{
 }
 input{
     font-size: 3vh;
+    background-color: white;
 }
 textarea{
   font-size: 3vh;
   width: 100%;
+  background-color: white;
 }
 h3{
     width: 100%;
